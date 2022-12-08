@@ -79,6 +79,19 @@
 		line-height: 1.25;
 		border-radius: 20px;
 		transition: 0.7s;
+		font-size: 100%;
+	}
+
+	@media (max-width:960px) {
+		.content-container{
+			font-size: 90%;
+		}
+	}
+
+	@media (max-width:767px) {
+		.content-container{
+			font-size: 35%;
+		}
 	}
 
 	.content-container:hover{
@@ -95,7 +108,7 @@
 	}
 
 	.content-container img{
-			width: 50%;
+			width: 100%;
 			max-width: 50%;
 			padding: 10px;
 	}
@@ -122,10 +135,6 @@
 		}
 	}
 	
-	
-	@media (max-width:420px){
-		
-	}
 	
 	
 	.header {
