@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+		<title>New Tech 22</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/burger.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                 }
+            });
+
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        </script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Контент -->
+			<header class="header">
+				<div class="container">
+					<div class="navigation">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./img/mirea-logo.png" alt="">
+							</a>
+						</div>
+						<div class="burger">
+							<span></span>
+						</div>
+						<nav class="nav-menu">
+							<ul class="list">
+								<li>
+									<a href="Smartphones.html">Смартфоны</a>
+								</li>
+								<li>
+									<a href="Quads.html">Квадрокоптеры</a>
+								</li>
+								<li>
+									<a href="Consoles.html">Игровые консоли</a>
+								</li>
+								<li>
+									<a href="Smart.html">Умные колонки</a>
+								</li>
+								<li>
+									<a href="VR.html">VR шлемы</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="container">
+					<div class="five-block">
+						<h1 class="five-block__title" align = "center">Гаджеты 21 века</h1>
+						<div class="five-block__row">
+							<div class="five-block__column">
+								<div class="five-block__item">
+									<a href="Smartphones.html">
+									<div class="five-block__image">
+										<img src="img/content/Smartphones.png" alt="">
+									</div>
+									</a>
+									<div class="five-block__text"> 
+									</div>
+								</div>
+							</div>
+							<div class="five-block__column">
+								<div class="five-block__item">
+									<div class="five-block__image">
+										<a href="./Quads.html">
+										<img src="img/content/Quads.png" alt="">
+									</div>
+									</a>
+									<div class="five-block__text">
+									</div>
+								</div>
+							</div>
+							<div class="five-block__column">
+								<div class="five-block__item">
+									<div class="five-block__image">
+									<a href="./Consoles.html">
+										<img src="img/content/Consoles.png" alt="">
+									</div>
+									</a>
+									<div class="five-block__text">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="five-block__row">
+							<div class="five-block__column">
+								<div class="five-block__item">
+									<div class="five-block__image">
+										<a href="./Smart.html">
+										<img src="img/content/Smart.png" alt="">
+									</div>
+									</a>
+									<div class="five-block__text">
+									</div>
+								</div>
+							</div>
+							<div class="five-block__column">
+								<div class="five-block__item">
+									<div class="five-block__image">
+										<a href="./VR.html">
+										<img src="img/content/VR.png" alt="">
+									</div>
+									</a>
+									<div class="five-block__text">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</main>
+			<footer class="footer">
+				<div>
+					<h5>Есетов Александр Александрович</h5>
+					<p>2022© Student MIREA. ALL RIGHTS RESERVED</p>
+					<p>Телефон для связи: +7(915) 218 78 94</p>
+				</div>
+		</footer>
+		</div>
+		<DIV ID = "toTop" > ^ Наверх </DIV>
+		<!-- Подключаем файл JS скриптов -->
+		<script src="js/script.js"></script>
+		<script src="js/burger.js"></script>
+	</body>
+</html>
+
+<!-- типы гаджетов: мобильные телефоны, квадракоптеры, игровые консоли, умные колонки, vr шлемы -->

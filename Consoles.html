@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+		<title>New Tech 22 Smartphones</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/burger.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script defer src="/examples/libs/chief-slider/chief-slider.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                 }
+            });
+
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        </script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Контент -->
+			<header class="header">
+				<div class="container">
+					<div class="navigation">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./img/mirea-logo.png" alt="">
+							</a>
+						</div>
+						<div class="burger">
+							<span></span>
+						</div>
+						<nav class="nav-menu">
+							<ul class="list">
+								<li>
+									<a href="index.html">Главная</a>
+								</li>
+								<li>
+									<a href="Quads.html">Квадрокоптеры</a>
+								</li>
+								<li>
+									<a href="Consoles.html">Игровые консоли</a>
+								</li>
+								<li>
+									<a href="Smart.html">Умные колонки</a>
+								</li>
+								<li>
+									<a href="VR.html">VR шлемы</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+            
+			<main class="page">
+				<div class="container">
+					<div class="content-container">
+						<div class="content-container_column">
+							<h2>Play Station 5</h2>
+							Sony продолжила свой путь в текущем поколении с PS5, с новой консолью, способной работать в 4K, а также с такими функциями, как Ray Tracing. Sony придала большое значение скорости SSD, которая может загружать огромные миры за пару секунд.
+						</div>
+							<img src = "./img/content/Consoles/PS5.png">
+					</div>
+				</div>
+				<div class="container">
+					<div class="content-container">
+						<div class="content-container_column">
+							<h2>Xbox Series X</h2>
+							Xbox Series X — одна из лучших игровых консолей, которые вы можете купить. Она обладает очень мощными характеристиками, способными запускать игры в разрешении 4K со скоростью до 120 кадров в секунду. 
+						</div>
+						<img src = "./img/content/Consoles/XBOX.png">
+					</div>
+				</div>
+				<div class="container">
+					<div class="content-container">
+						<div class="content-container_column">
+							<h2>Nintendo Switch</h2>
+							Nintendo Switch была запущена пять лет назад, но она по — прежнему остается одной из лучших игровых консолей, особенно для портативных игр. Она дешевле, чем модель OLED и ни одна другая компания даже не приблизилась к тому, чтобы конкурировать с ней</div>
+						<img src = "./img/content/Consoles/Nintendo switch.png">
+					</div>
+				</div>
+			</main>
+    <footer class="footer">
+            <div>
+                <h5>Есетов Александр Александрович</h5>
+                <p>2022© Student MIREA. ALL RIGHTS RESERVED</p>
+                <p>Телефон для связи: +7(915) 218 78 94</p>
+            </div>
+	</footer>
+		</div>
+        <DIV ID = "toTop" > ^ Наверх </DIV>
+		<!-- Подключаем файл JS скриптов -->
+		<script src="./js/script.js"></script>
+        <script src="js/burger.js"></script>
+	</body>
+</html>
