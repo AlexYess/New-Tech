@@ -135,7 +135,16 @@
     margin-bottom: 20px;
   }
   .list li a {
+    text-align: center;
     font-size: 25px;
     padding: 10px;
   }
+
+  @media (max-width:767px){
+    .list li a{
+      font-size: small;
+      padding: auto;
+    }
+  }
+
 }
