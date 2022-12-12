@@ -49,9 +49,16 @@
 .list li a {
   color: black;
   text-transform: uppercase;
+  white-space: nowrap;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
+}
+@media (max-width:1650px)
+{
+  .list li a{
+    font-size: 65%;
+  }
 }
 .list li a:hover {
   color: white;

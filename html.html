@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+		<title>New Tech 22 Smartphones</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/burger.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                 }
+            });
+
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        </script>
+        <script type="text/javascript">
+            $(document).querySelector('btn').addEventListener('click', function() {  (document).querySelector('.container').classList.add('active');
+                })
+        </script>       
+	</head>
+
+	<body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+          
+          <button type="button" id="#btn">Click Me!</button>
+
+	</body>
+</html>
