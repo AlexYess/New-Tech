@@ -131,12 +131,12 @@
 		display: flex;
 		justify-content: space-between;
 		height: 80px;
-		align-items: center;
+		align-items:stretch;
 	}
 	.header__logo {
 		width: 70px;
 		height: 70px;
-		border-radius: 20%;
+		border-radius: 20px;
 		background-color: #c0b5b5;
 	}
 
@@ -195,15 +195,16 @@
 
 	@media (max-width:960px) {
 		.content-container{
-			font-size:small;
+			font: size 50px;;
+			max-width: 500px;
+			max-height: fit-content;
+		}
+		.content-container img{
+			width: 50%;
+			height: fit-content;
 		}
 	}
 
-	@media (max-width:767px) {
-		.content-container{
-			font-size: 35%;
-		}
-	}
 
 	@media (max-width:1200px){
 		.container{
@@ -287,3 +288,195 @@
 			font-size:medium;
 		}
 	}
+
+	.slider {
+		width: 300px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		margin-top: 5%;
+	  }
+	
+	  
+	  .slides {
+		display: flex;
+		
+		
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
+		
+	  }
+	  .slides::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	  }
+	  .slides::-webkit-scrollbar-thumb {
+		background: black;
+		border-radius: 10px;
+	  }
+	  .slides::-webkit-scrollbar-track {
+		background: transparent;
+	  }
+	  .slides > div {
+		scroll-snap-align: start;
+		flex-shrink: 0;
+		width: 300px;
+		height: 300px;
+		margin-right: 50px;
+		border-radius: 10px;
+		background: #eee;
+		transform-origin: center center;
+		transform: scale(1);
+		transition: transform 0.5s;
+		position: relative;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 100px;
+	  }
+
+	  
+	  .slider > a {
+		display: inline-flex;
+		width: 1.5rem;
+		height: 1.5rem;
+		background: white;
+		text-decoration: none;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		margin: 0 0 0.5rem 0;
+		position: relative;
+	  }
+	  .slider > a:active {
+		top: 1px;
+		color: #eee;
+	  }
+	  .slider > a:focus {
+		background: #000;
+	  }
+	  
+	  .a1{
+		color: #000;
+	  }
+
+	 .h2s1{
+		text-align: center;
+		padding: 5% 0px 1% 0px
+	 }
+
+	 .h2s2{
+		text-align: left;
+		padding: 10% 0% 0% 10%;
+	 }
+	 
+	 .y-video{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		height: 600px;
+		margin-top: 50px;
+		max-height: 500px;
+		max-width: 1000px;
+		display: flex;
+		padding: 20px 0px 10px 20px;
+	 }
+	 
+	 @media (max-width:760px){
+		.y-video{
+			height: 300px;
+		}
+	 }
+
+	 .about-text{
+		text-align: left;
+		padding: 2% 0% 0% 10%;
+	 }
+
+	 .smart-button{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		object-fit:fill;
+		display: flex;
+		justify-content: center;
+		background-color: transparent;
+	 }
+	 
+	 .smart-button img{
+		height:100%;
+		width:fit-content;
+	 }
+
+	 @media (max-width:960px){
+		.smart-button img{
+			width: 75%;
+			height: 75%;
+		}
+	 }
+	 
+	 @media (max-width:760px){
+		.smart-button img{
+			width: 60%;
+			height: 60%;
+		}
+	 }
+
+	 .dialog {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		max-width: 500px;
+		object-fit:fill;
+		display: flex;
+		justify-content: center;
+		background-color: transparent;
+		width:fit-content;
+	 }
+
+	 @media (max-width:960px){
+		.dialog {
+			width: 75%;
+			height: 75%;
+		}
+	 }
+
+	 @media (max-width:760px){
+		.dialog {
+			width: 60%;
+			height: 60%;
+		}
+	 }
+
+	 .smart-button:hover{
+		transform: scale(1.2);
+	 }
+
+	 .sotrudniki {
+		width: 300px;
+		height: 300px;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		object-fit:fill;
+		display: flex;
+		justify-content: center;
+		background: url('../img/sotrudniki.png');
+		animation: sotrudniki 8s steps(1) infinite;
+		border: #eee;
+		border-radius: 40px;
+		}
+
+		@keyframes sotrudniki {
+			0% {background-position: 0px 0px;}
+			20% {background-position: -600px 0px;}
+			40% {background-position: -1200px 0px;}
+			60% {background-position: -1800px 0px;}
+			80% {background-position: -2400px 0px;}
+		}
